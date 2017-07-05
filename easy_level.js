@@ -1,7 +1,6 @@
 function isPrime(number) {
   if (number <= 1) {
-    return fa
-    lse; 
+    return false; 
   }
   if (number == 2) {
     return true;
