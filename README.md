@@ -1,3 +1,2 @@
 # frontend-interview-questions
-Solutions
-Intermediate & hard solves 'll be here soon
+Solutions for intermediate & hard quizzes 'll be here soon
