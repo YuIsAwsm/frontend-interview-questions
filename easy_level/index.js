@@ -108,10 +108,11 @@ function reverseStr(string) {
 /*
 indexOf - Implement the indexOf function for arrays.
 */
-function indexOf(arr, key) {
-  for (let i; i <= arr.length; i += 1) {
-    if (arr[i] === key) {
-      return key;
+
+function indexOf(arr, item) {
+  for (let i = 0; i <= arr.length; i += 1) {
+    if (arr[i] === item) {
+      return i;
     }
   }
   return -1;
@@ -121,6 +122,7 @@ function indexOf(arr, key) {
 isPalindrome - Return true or false indicating whether the given string is a plaindrone
 (case and space insensitive).
 */
+
 function isPalindrome(string) {
   // eslint-disable-next-line
   string = string.split(' ').join('').toLowerCase();
@@ -160,7 +162,8 @@ function missing(arr) {
       result.push(i);
     }
   }
-  return result;
+  // eslint-disable-next-line
+  return result.length > 1 ? result : result.length === 0 ? undefined : result[0];
 }
 
 /*
@@ -229,7 +232,7 @@ test(t => t.is(isSorted([-Infinity, -5, 0, 3, 9]), true));
 test(t => t.is(isSorted([3, 9, -3, 10]), false));
 test(t => t.is(missing([]), undefined));
 test(t => t.is(missing([1, 4, 3]), 2));
-test(t => t.is(missing([2, 3, 4]), 1));
+test(t => t.is(missing([2, 3, 4]), undefined));
 test(t => t.is(missing([5, 1, 4, 2]), 3));
 test(t => t.is(missing([1, 2, 3, 4]), undefined));
 test(t => t.is(reduce([1, 2, 3, 4], (a, b) => a + b, 0), 10));
