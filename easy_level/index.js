@@ -195,31 +195,39 @@ function isBalanced(string) {
 test(t => t.is(factorial(0), 1));
 test(t => t.is(factorial(1), 1));
 test(t => t.is(factorial(6), 720));
+
 test(t => t.is(fib(0), 0));
 test(t => t.is(fib(1), 1));
 test(t => t.is(fib(10), 55));
 test(t => t.is(fib(20), 6765));
+
 test(t => t.is(fibRec(0), 0));
 test(t => t.is(fibRec(1), 1));
 test(t => t.is(fibRec(10), 55));
 test(t => t.is(fibRec(20), 6765));
+
 test(t => t.deepEqual(filter([1, 2, 3, 4], n => n < 3), [1, 2]));
+
 test(t => t.is(indexOf([1, 2, 3], 1), 0));
 test(t => t.is(indexOf([1, 2, 3], 4), -1));
+
 test(t => t.is(isBalanced('}{'), false));
 test(t => t.is(isBalanced('{{}'), false));
 test(t => t.is(isBalanced('{}{}'), true));
 test(t => t.is(isBalanced('foo { bar { baz } boo }'), true));
 test(t => t.is(isBalanced('foo { bar { baz }'), false));
 test(t => t.is(isBalanced('foo { bar } }'), false));
+
 test(t => t.is(isPalindrome(''), true));
 test(t => t.is(isPalindrome('abcdcba'), true));
 test(t => t.is(isPalindrome('abcd'), false));
 test(t => t.is(isPalindrome('A man a plan a canal Panama'), true));
+
 test(t => t.is(isPalindromeF(''), true));
 test(t => t.is(isPalindromeF('abcdcba'), true));
 test(t => t.is(isPalindromeF('abcd'), false));
 test(t => t.is(isPalindromeF('A man a plan a canal Panama'), true));
+
 test(t => t.is(isPrime(0), false));
 test(t => t.is(isPrime(1), false));
 test(t => t.is(isPrime(9), false));
@@ -227,14 +235,18 @@ test(t => t.is(isPrime(17), true));
 test(t => t.is(isPrime(25), false));
 test(t => t.is(isPrime(73), true));
 test(t => t.is(isPrime(10000000000000), false));
+
 test(t => t.is(isSorted([]), true));
 test(t => t.is(isSorted([-Infinity, -5, 0, 3, 9]), true));
 test(t => t.is(isSorted([3, 9, -3, 10]), false));
+
 test(t => t.is(missing([]), undefined));
 test(t => t.is(missing([1, 4, 3]), 2));
 test(t => t.is(missing([2, 3, 4]), undefined));
 test(t => t.is(missing([5, 1, 4, 2]), 3));
 test(t => t.is(missing([1, 2, 3, 4]), undefined));
+
 test(t => t.is(reduce([1, 2, 3, 4], (a, b) => a + b, 0), 10));
+
 test(t => t.is(reverseStr(''), ''));
 test(t => t.is(reverseStr('abcdef'), 'fedcba'));
