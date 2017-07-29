@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/YuIsAwsm/frontend-interview-questions.git"
+    "url": "git+https://github.com/blahj/frontend-interview-questions.git"
   },
   "author": "Kirill V",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/YuIsAwsm/frontend-interview-questions/issues"
+    "url": "https://github.com/blahj/frontend-interview-questions/issues"
   },
-  "homepage": "https://github.com/YuIsAwsm/frontend-interview-questions#readme",
+  "homepage": "https://github.com/blahj/frontend-interview-questions#readme",
   "devDependencies": {
     "eslint": "^3.19.0",
     "eslint-config-airbnb": "^15.0.2",
